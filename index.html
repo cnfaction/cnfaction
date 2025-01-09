@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Improved Product Showcase</title>
+    <title>Product Showcase</title>
+    <!-- 引入外部 CSS 文件 -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- 网站头部 -->
     <header>
         <h1>Product Showcase</h1>
         <p>Discover and shop your favorite items!</p>
@@ -24,10 +26,11 @@
         <button class="category-button" data-category="misc">Misc</button>
     </nav>
 
-    <!-- 产品展示区 -->
+    <!-- 产品展示区域 -->
     <main class="product-grid">
+        <!-- 示例产品 -->
         <div class="product-card" data-category="hoodies">
-            <img src="images/product1.jpg" alt="Product 1">
+            <img src="images/product1.jpg" alt="Sp5der OG Web Hoodie">
             <h3>Sp5der OG Web Hoodie Black</h3>
             <p class="price">$36.61</p>
             <div class="buttons">
@@ -36,13 +39,34 @@
             </div>
         </div>
 
-        <!-- 更多产品卡片 -->
+        <div class="product-card" data-category="caps">
+            <img src="images/product2.jpg" alt="Vetements Cap">
+            <h3>Vetements Cap</h3>
+            <p class="price">$15</p>
+            <div class="buttons">
+                <button class="btn btn-primary">Item Link</button>
+                <button class="btn btn-secondary">Quality Check</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="hoodies">
+            <img src="images/product3.jpg" alt="Vetements Zurich Hoodie">
+            <h3>Vetements Zurich Hoodie</h3>
+            <p class="price">$52</p>
+            <div class="buttons">
+                <button class="btn btn-primary">Item Link</button>
+                <button class="btn btn-secondary">Quality Check</button>
+            </div>
+        </div>
+        <!-- 更多产品卡片可以继续添加 -->
     </main>
 
+    <!-- 网站底部 -->
     <footer>
         <p>© 2025 Product Showcase - All rights reserved.</p>
     </footer>
 
+    <!-- 外部 JS 文件 -->
     <script src="script.js"></script>
 </body>
 </html>
