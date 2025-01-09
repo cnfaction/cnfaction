@@ -1,88 +1,79 @@
-/* General Reset */
-body, h1, h2, h3, p, ul, li {
+/* 基础样式 */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    padding: 0 20px;
-}
-
-/* Header Section */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-/* Search Container */
-.search-container {
-    margin: 20px auto;
-    max-width: 600px;
+    background-color: #1e1e1e;
+    color: #f8f8f8;
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.search-container input {
-    flex: 1;
-    padding: 10px;
+/* 标题样式 */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* 搜索框容器 */
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* 输入框样式 */
+input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
     font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid #333;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background-color: #2e2e2e;
+    color: #f8f8f8;
+    border-right: none;
 }
 
-.search-container button {
+/* 按钮样式 */
+button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #007BFF;
-    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
 }
 
-.search-container button:hover {
+button:hover {
     background-color: #0056b3;
 }
 
-/* Results Container */
-.results-container {
-    margin: 20px auto;
-    max-width: 600px;
-    padding: 10px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* 图片样式 */
+#background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* 背景图片位于最底层 */
+    opacity: 0.7; /* 半透明效果 */
 }
 
-.results-container div {
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-}
-
-.results-container div:last-child {
-    border-bottom: none;
-}
-
-/* Footer Section */
-footer {
-    text-align: center;
-    padding: 10px 0;
+/* 搜索框的容器 */
+.search-results {
     margin-top: 20px;
-    background-color: #333;
-    color: white;
+    text-align: center;
 }
