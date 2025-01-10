@@ -1,88 +1,35 @@
-/* General Reset */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* 基本样式设置 */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    padding: 0 20px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header Section */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-/* Search Container */
-.search-container {
-    margin: 20px auto;
-    max-width: 600px;
-    display: flex;
-    gap: 10px;
-}
-
-.search-container input {
-    flex: 1;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.search-container button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.search-container button:hover {
-    background-color: #0056b3;
-}
-
-/* Results Container */
-.results-container {
-    margin: 20px auto;
-    max-width: 600px;
-    padding: 10px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.results-container div {
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-}
-
-.results-container div:last-child {
-    border-bottom: none;
-}
-
-/* Footer Section */
 footer {
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    background-color: #333;
+    background-color: #2c3e50;
     color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
 }
